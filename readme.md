@@ -6,6 +6,12 @@ If you want to quit your app after a certain period of inactivity, you may use t
 
 ## Installation
 
+To install from PYPI:
+
+```
+pip install incubus-keremkoseoglu
+```
+
 To install from GitHub:
 
 ```
