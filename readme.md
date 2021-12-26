@@ -20,7 +20,7 @@ pip install git+https://github.com/keremkoseoglu/incubus.git
 
 ## Usage
 
-In the example below, your Python app will close after 60 seconds of inactivity.
+In the example below, your Python app will close after 60 minutes of inactivity.
 
 ```
 from incubus import IncubusFactory
