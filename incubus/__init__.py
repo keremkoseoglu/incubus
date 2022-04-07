@@ -4,7 +4,7 @@ from time import sleep
 import os
 
 
-__version__ = "0.0.2"
+__version__ = "0.0.3"
 AUTHOR = "Kerem Koseoglu"
 EMAIL = "kerem@keremkoseoglu.com"
 DESCRIPTION = "Idle app killer"
