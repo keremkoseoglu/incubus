@@ -4,7 +4,7 @@ from time import sleep
 import os
 
 
-__version__ = "0.0.3"
+__version__ = "0.0.4"
 AUTHOR = "Kerem Koseoglu"
 EMAIL = "kerem@keremkoseoglu.com"
 DESCRIPTION = "Idle app killer"
@@ -24,6 +24,7 @@ class Incubus:
         Thread(target=self._start, daemon=True).start()
 
     def user_event(self):
+        """ Resets the timer after user does something """
         self._min_ticks = 0
 
     def _start(self):
@@ -34,12 +35,13 @@ class Incubus:
             sleep(60)
 
 
-class IncubusFactory:
+class IncubusFactory: # pylint: disable=R0903
     """ Singleton logic """
     _SINGLETON: Incubus = None
 
     @staticmethod
     def get_instance() -> Incubus:
+        """ Returns a singleton instance """
         if IncubusFactory._SINGLETON is None:
             IncubusFactory._SINGLETON = Incubus()
         return IncubusFactory._SINGLETON

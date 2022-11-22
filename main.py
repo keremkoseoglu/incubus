@@ -1,9 +1,9 @@
 """ Main entry point """
-from cgi import test
-from incubus import IncubusFactory
 from time import sleep
+from incubus import IncubusFactory
 
 def test_incubus():
+    """ Test of the library """
     inc = IncubusFactory.get_instance()
     inc.start(1)
     print("Going to sleep a bit")
